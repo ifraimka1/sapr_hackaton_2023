@@ -17,6 +17,14 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+const db = require('./db.json');
+
+app.get('/location', (req, res) => {
+    const obj = db.find(o => o.id == req.query.pin);
+    console.log(obj);
+    res.render('location', obj);
+}); 
+
 app.post('/', (req, res) => {
 
 });
