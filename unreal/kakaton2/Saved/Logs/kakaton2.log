@@ -901,3 +901,117 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2023.06.17-06.18.18:824][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.044817 seconds (updated 0 objects)
 [2023.06.17-06.18.18:963][  2]LogSlate: Took 0.053517 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
 [2023.06.17-06.18.19:973][  2]LogSlate: Took 0.000212 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2023.06.17-06.19.19:522][669]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2023.06.17-06.20.20:125][557]LogStaticMesh: Building static mesh ploskost_Куб_019...
+[2023.06.17-06.20.20:208][557]LogTexture: Display: Building textures: DeprecatedTextureEB9CBE3C423008B5E8E130901E171C89 (BGRA8, 128X128)
+[2023.06.17-06.20.20:421][557]LogStaticMesh: Built static mesh [0.31s] /Game/ploskost_Куб_019.ploskost_Куб_019
+[2023.06.17-06.20.20:599][557]LogMaterial: Display: Missing cached shadermap for _________________001 in PCD3D_SM5, Default, SM5 (DDC key hash: DA00CF185EC5A0A84EB934BDCEF0CC45EB5B3166), compiling. 
+[2023.06.17-06.20.20:844][557]LogShaderCompilers: Display: Submitted 16 shader compile jobs with 'Low' priority
+[2023.06.17-06.20.20:948][557]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 16
+[2023.06.17-06.20.20:948][557]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 11
+[2023.06.17-06.20.20:948][557]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6
+[2023.06.17-06.20.20:948][557]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 1
+[2023.06.17-06.20.20:948][557]LogShaderCompilers: Display: Started 16 'Local' shader compile jobs with 'Low' priority
+[2023.06.17-06.20.20:948][557]LogStaticMesh: Building static mesh ploskost_Плоскость_001...
+[2023.06.17-06.20.21:005][557]LogStaticMesh: Built static mesh [0.06s] /Game/ploskost_Плоскость_001.ploskost_Плоскость_001
+[2023.06.17-06.20.23:608][609]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2023.06.17-06.20.27:685][735]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2023.06.17-06.20.27:685][735]LogShaderCompilers: Display: Total job queries 16, among them cache hits 0 (0.00%)
+[2023.06.17-06.20.27:685][735]LogShaderCompilers: Display: Tracking 1 distinct input hashes that result in 1 distinct outputs (100.00%)
+[2023.06.17-06.20.27:704][735]LogShaderCompilers: Display: RAM used: 0.01 MB (0.00 GB) of 358.40 MB (0.35 GB) budget. Usage: 0.00%
+[2023.06.17-06.20.27:704][735]LogShaderCompilers: Display: ================================================
+[2023.06.17-06.20.27:859][742]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2023.06.17-06.20.43:125][469]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2023.06.17-06.20.45:872][469]LogSlate: Window 'Save Content' being destroyed
+[2023.06.17-06.20.56:333][972]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2023.06.17-06.21.00:956][972]LogSlate: Window 'Save Content' being destroyed
+[2023.06.17-06.21.04:485][972]LogSlate: Window 'Save Level As' being destroyed
+[2023.06.17-06.21.06:705][ 32]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2023.06.17-06.21.08:032][ 32]LogSlate: Window 'Save Content' being destroyed
+[2023.06.17-06.21.11:907][ 32]LogSlate: Window 'Save Level As' being destroyed
+[2023.06.17-06.21.41:243][168]LogTemp: Repeating last play command: Selected Viewport
+[2023.06.17-06.21.41:391][168]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.06.17-06.21.41:425][168]PIE: New page: PIE session: Untitled_1 (17 июн. 2023 г., 12:21:41)
+[2023.06.17-06.21.41:603][168]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2023.06.17-06.21.41:607][168]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2023.06.17-06.21.41:625][168]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2023.06.17-06.21.41:786][168]LogPlayLevel: PIE: StaticDuplicateObject took: (0.161022s)
+[2023.06.17-06.21.41:807][168]LogAIModule: Creating AISystem for world Untitled_1
+[2023.06.17-06.21.41:831][168]LogPlayLevel: PIE: World Init took: (0.044982s)
+[2023.06.17-06.21.41:849][168]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.224053s)
+[2023.06.17-06.21.41:883][168]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2023.06.17-06.21.41:945][168]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2023.06.17-06.21.41:960][168]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.06.17-06.21.41:960][168]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.06.17-06.21.41:960][168]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.06.17-06.21.41:960][168]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.06.17-06.21.41:960][168]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.06.17-06.21.41:960][168]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2023.06.17-06.21.41:960][168]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.06.17-06.21.41:977][168]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.06.17-06.21.41:992][168]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.06.17-06.21.41:992][168]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.06.17-06.21.41:992][168]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.06.17-06.21.41:992][168]LogAudioMixer: Display: Initializing audio mixer.
+[2023.06.17-06.21.42:050][168]LogAudioMixer: Display: 0: FrontLeft
+[2023.06.17-06.21.42:050][168]LogAudioMixer: Display: 1: FrontRight
+[2023.06.17-06.21.42:070][168]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2023.06.17-06.21.42:071][168]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.06.17-06.21.42:072][168]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.06.17-06.21.42:072][168]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.06.17-06.21.42:073][168]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2023.06.17-06.21.42:073][168]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2023.06.17-06.21.42:073][168]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2023.06.17-06.21.42:075][168]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2023.06.17-06.21.42:075][168]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2023.06.17-06.21.42:075][168]LogInit: FAudioDevice initialized.
+[2023.06.17-06.21.42:085][168]LogAudio: Display: Audio Device (ID: 2) registered with world 'Untitled_1'.
+[2023.06.17-06.21.42:177][168]LogLoad: Game class is 'GameModeBase'
+[2023.06.17-06.21.42:407][168]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2023.06.17-09.21.42
+[2023.06.17-06.21.42:429][168]LogWorld: Bringing up level for play took: 0.011500
+[2023.06.17-06.21.42:486][168]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2023.06.17-06.21.42:795][168]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2023.06.17-06.21.42:954][168]PIE: Server logged in
+[2023.06.17-06.21.42:974][168]PIE: Play in editor total start time 1,659 seconds.
+[2023.06.17-06.21.45:977][311]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.06.17-06.21.45:977][311]LogWorld: BeginTearingDown for /Temp/UEDPIE_0_Untitled_1
+[2023.06.17-06.21.46:036][311]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+[2023.06.17-06.21.46:037][311]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.06.17-06.21.46:100][311]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.06.17-06.21.46:135][311]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.06.17-06.21.46:159][311]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.06.17-06.21.46:190][311]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2023.06.17-06.21.46:193][311]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2023.06.17-06.21.46:355][311]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2023.06.17-06.21.46:444][312]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2023.06.17-06.22.14:385][814]LogUObjectHash: Compacting FUObjectHashTables data took   1.32ms
+[2023.06.17-06.22.17:173][814]LogSlate: Window 'Save Content' being destroyed
+[2023.06.17-06.22.24:622][814]LogSlate: Window 'Save Level As' being destroyed
+[2023.06.17-06.22.25:048][814]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Untitled" FILE="C:/Projects/sapr_hackaton_2023/unreal/kakaton2/Content/Maps/Untitled.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2023.06.17-06.22.25:102][814]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2023.06.17-06.22.25:378][814]LogSavePackage: Moving 'C:/Projects/sapr_hackaton_2023/unreal/kakaton2/Saved/Untitled5C8842DF4048D6B58D49EBB308715CF6.tmp' to 'C:/Projects/sapr_hackaton_2023/unreal/kakaton2/Content/Maps/Untitled.umap'
+[2023.06.17-06.22.25:456][814]LogFileHelpers: Saving map 'Untitled' took 0.823
+[2023.06.17-06.22.25:537][814]LogAssetEditorSubsystem: Opening Asset editor for World /Game/city.city
+[2023.06.17-06.22.25:538][814]Cmd: MAP LOAD FILE="C:/Projects/sapr_hackaton_2023/unreal/kakaton2/Content/city.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2023.06.17-06.22.25:538][814]LightingResults: New page: Lighting Build
+[2023.06.17-06.22.25:538][814]LoadErrors: New page: Loading map: city.umap
+[2023.06.17-06.22.25:540][814]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2023.06.17-06.22.25:548][814]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.06.17-06.22.25:548][814]MapCheck: New page: Map Check
+[2023.06.17-06.22.25:548][814]LightingResults: New page: Lighting Build
+[2023.06.17-06.22.25:566][814]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2023.06.17-06.22.25:641][814]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2023.06.17-06.22.25:641][814]LogAudio: Display: Audio Device (ID: 1) registered with world 'city'.
+[2023.06.17-06.22.25:646][814]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2023.06.17-06.22.25:646][814]LogAIModule: Creating AISystem for world city
+[2023.06.17-06.22.25:679][814]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2023.06.17-06.22.25:697][814]Cmd: MAP CHECKDEP NOCLEARLOG
+[2023.06.17-06.22.25:698][814]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,192ms to complete.
+[2023.06.17-06.22.25:698][814]LogFileHelpers: Loading map 'city' took 0.159
+[2023.06.17-06.22.25:744][814]AssetCheck: New page: Asset Save: Untitled
+[2023.06.17-06.22.25:744][814]LogContentValidation: Display: Validating World /Game/Maps/Untitled.Untitled
+[2023.06.17-06.22.25:746][814]LogLinker: Warning: [AssetLog] C:\Projects\sapr_hackaton_2023\unreal\kakaton2\Content\Maps\Untitled.umap: Failed to load '/Game/Maps/Untitled_BuiltData': Can't find file.
+[2023.06.17-06.22.25:747][814]LogLinker: Warning: [AssetLog] C:\Projects\sapr_hackaton_2023\unreal\kakaton2\Content\Maps\Untitled.umap: Failed to load '/Game/Maps/Untitled_BuiltData': Can't find file.
+[2023.06.17-06.22.25:748][814]LogLinker: Warning: [AssetLog] C:\Projects\sapr_hackaton_2023\unreal\kakaton2\Content\Maps\Untitled.umap: Failed to load '/Game/Maps/Untitled_BuiltData': Can't find file.
+[2023.06.17-06.22.25:750][814]LogLinker: Warning: [AssetLog] C:\Projects\sapr_hackaton_2023\unreal\kakaton2\Content\Maps\Untitled.umap: Failed to load '/Game/Maps/Untitled_BuiltData': Can't find file.
+[2023.06.17-06.22.25:775][814]LoadErrors: Failed to load /Game/Maps/Untitled_BuiltData.Untitled_BuiltData Referenced by PersistentLevel
