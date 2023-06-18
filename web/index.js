@@ -23,10 +23,6 @@ app.get('/location', (req, res) => {
     const obj = db.find(o => o.id == req.query.pin);
     console.log(obj);
     res.render('location', obj);
-}); 
-
-app.post('/', (req, res) => {
-
 });
 
 app.listen(port, () => console.log('started'));

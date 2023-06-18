@@ -8,16 +8,90 @@
   </head>
   <body>
     <header>
+      <a
+        id="home"
+        class="button"
+        href="http://localhost:3000/">НАЗАД</a>
       <div id="logo"><img src="/res/pix/logo.png"></div>
       <div id="label">
         <h1>TRAFFIC EXPERT</h1>
       </div>
     </header>
     <div id="main">
-      <div id="address">
-        <h1>{{ address }}</h1>
+      <h1>{{ address }}</h1>
+      <div id="overview">
+        <div id="model"><img id="image" src="/res/models/model_{{ id }}/00.jpg"></div>
+        <div id="menu">
+          <div id="options">
+            <div id="lights" class="options-block">
+              <h2>Светофор</h2>
+              <label class="switch">
+                <input
+                  id="lights-switch"
+                  type="checkbox"
+                  onClick="update(this)">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div id="zebra" class="options-block">
+              <h2>Переход</h2>
+              <label class="switch">
+                <input
+                  id="zebra-switch"
+                  type="checkbox"
+                  onClick="update(this)">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div id="params">
+            <div class="param">
+              <h2>Аварийность</h2>
+              <p>{{ danger }}</p>
+            </div>
+            <div class="param">
+              <h2>Загруженность</h2>
+              <p>{{ traffic }}</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="model">{{ model }}</div>
     </div>
   </body>
 </html>
+<script>
+  const image = document.getElementById('image');
+  let lights = 0;
+  let zebra = 0;
+
+  function update(checkbox) {
+    const type = checkbox.id.split('-')[0];
+    let newStatus = new Number();
+
+    if (checkbox.checked) {
+      newStatus = 1;
+    } else {
+      newStatus = 0;
+    }
+
+    switch (type) {
+      case 'lights': lights = newStatus;
+        break;
+      case 'zebra': zebra = newStatus;
+        break;
+    }
+
+    image.src = image.src.slice(0, -6) + lights + zebra + '.jpg';
+  }
+</script>
+
+<!--<div class="row">
+<div
+class="button"
+onClick="update(this)"
+id="light_0"></div>
+<div
+class="button"
+onClick="update(this)"
+id="light_1"></div>
+</div> -->
