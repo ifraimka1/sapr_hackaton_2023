@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "address": "ул. Пушкина",
+        "danger": 0,
+        "traffic": 0
+    },
+    {
+        "id": 2,
+        "address": "ул. не Пушкина",        
+        "danger": 0,
+        "traffic": 0
+    },
+    {
+        "id": 3,
+        "address": "ул. а кого улица я не знаю",
+        "danger": 0,
+        "traffic": 0
+    }
+]

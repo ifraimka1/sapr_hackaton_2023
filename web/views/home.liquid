@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/styles.css" rel="stylesheet">
+    <title>Транспортная сеть</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo"><img src="/res/pix/logo.png"></div>
+      <div id="label">
+        <h1>CITY SCANNER</h1>
+      </div>
+    </header>
+    <div id="map">
+      <img id="map-img" src="/res/pix/map.png">
+      <div
+        class="pin"
+        id="pin_1"
+        onClick="go(this)"></div>
+      <div
+        class="pin"
+        id="pin_2"
+        onClick="go(this)"></div>
+      <div
+        class="pin"
+        id="pin_3"
+        onClick="go(this)"></div>
+    </div>
+  </body>
+  <script>
+    function go(clickedEl) {
+      location.href = "http://localhost:3000/location?pin=" + clickedEl.id.split('_')[1];
+    }
+  </script>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/styles.css" rel="stylesheet">
+    <title>Просмотр участка</title>
+  </head>
+  <body onload="init({{ danger }}, {{ traffic }})">
+    <header>
+      <a
+        id="home"
+        class="button"
+        href="http://localhost:3000/">НАЗАД</a>
+      <div id="logo"><img src="/res/pix/logo.png"></div>
+      <div id="label">
+        <h1>CITY SCANNER</h1>
+      </div>
+    </header>
+    <div id="main">
+      <h1>{{ address }}</h1>
+      <div id="overview">
+        <div id="model"><img id="image" src="/res/models/model_{{ id }}/00.jpg"></div>
+        <div id="menu">
+          <div id="options">
+            <div id="lights" class="options-block">
+              <h2>Светофор</h2>
+              <label class="switch">
+                <input
+                  id="lights-switch"
+                  type="checkbox"
+                  onClick="update(this)">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div id="zebra" class="options-block">
+              <h2>Переход</h2>
+              <label class="switch">
+                <input
+                  id="zebra-switch"
+                  type="checkbox"
+                  onClick="update(this)">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div id="params">
+            <div class="param">
+              <h2>Аварийность</h2>
+              <p id="dangerStr"></p>
+            </div>
+            <div class="param">
+              <h2>Загруженность</h2>
+              <p id="trafficStr"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const metrics = {};
+  const image = document.getElementById('image');
+  let lights = 0;
+  let zebra = 0;
+
+  function init(dangerDefault, trafficDefault) {
+    metrics.dangerDefault = dangerDefault;
+    metrics.trafficDefault = trafficDefault;
+    simulate();
+  }
+
+  function simulate() {
+    const newDanger = metrics.dangerDefault -(lights * 3 + zebra * 2);
+    let dangerStr = '';
+    const newTraffic = metrics.trafficDefault + (lights * 3 + zebra * 2);
+    let trafficStr = '';
+
+    if (newDanger >= 3) {
+      dangerStr = 'высокая';
+    } else if (newDanger >= 0) {
+      dangerStr = 'средняя';
+    } else {
+      dangerStr = 'низкая';
+    }
+
+    if (newTraffic >= 3) {
+      trafficStr = 'высокая';
+    } else if (newTraffic >= 0) {
+      trafficStr = 'средняя';
+    } else {
+      trafficStr = 'низкая';
+    }
+
+    document.getElementById('dangerStr').innerHTML = dangerStr;
+    document.getElementById('trafficStr').innerHTML = trafficStr;
+  }
+
+  function update(checkbox) {
+    const type = checkbox.id.split('-')[0];
+    let newStatus = new Number();
+
+    if (checkbox.checked) {
+      newStatus = 1;
+    } else {
+      newStatus = 0;
+    }
+
+    switch (type) {
+      case 'lights': lights = newStatus;
+        break;
+      case 'zebra': zebra = newStatus;
+        break;
+    }
+
+    image.src = image.src.slice(0, -6) + lights + zebra + '.jpg';
+
+    simulate();
+  }
+</script>
