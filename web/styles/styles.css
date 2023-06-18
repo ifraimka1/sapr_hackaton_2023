@@ -63,6 +63,12 @@ header #home {
     font-weight: bolder;
 
     background-color: #50BD05;
+    
+    transition: 0.3s;
+}
+
+header #home:hover {
+    background-color: #368C00;
 }
 
 #map,
